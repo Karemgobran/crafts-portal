@@ -5,9 +5,9 @@ import About from "../../components/About/About";
 import Categories from "../../components/Categories/Categories";
 import Reviews from "../../components/Reviews/Reviews";
 import Footer from "../../components/Footer/Footer";
-import "./CraftsPortal.css";
+import "./Landing.css";
 
-function CraftsPortal() {
+function Landing() {
   return (
     <>
       <Header />
@@ -20,4 +20,4 @@ function CraftsPortal() {
   );
 }
 
-export default CraftsPortal;
+export default Landing;

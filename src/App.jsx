@@ -1,10 +1,10 @@
 import "./App.css";
-import CraftsPortal from "./Pages/CraftsPortal/CraftsPortal";
+import Landing from "./Pages/Landing/Landing";
 
 function App() {
   return (
     <>
-      <CraftsPortal />
+      <Landing />
     </>
   );
 }
