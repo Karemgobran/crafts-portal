@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    /* لون خلفية الصفحة */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* الصورة الخلفية */
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    background-image: url('/pic/signing.jpg');
+    border-radius: 1%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1.5px);
+    z-index: 0;
+    transform: translate(5%, 5%);
+}
+
+/* الفورم */
+.login-container {
+    background: rgba(255, 245, 238, 0.9);
+    /* خلفية شفافة للفورم */
+    backdrop-filter: blur(5px);
+    /* تأثير الـ blur لخلفية الفورم */
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    /* حجم الفورم */
+    text-align: center;
+    z-index: 2;
+    /* للتأكد من أن الفورم فوق الصورة */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    color: #1a2a44;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a2a44;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2a3b5a;
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.signup-link a {
+    color: #1a2a44;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
